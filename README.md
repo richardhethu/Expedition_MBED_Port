@@ -7,6 +7,6 @@ This is the source code for MBED on Ferrari board.
 
 1. This code is modified to a large degree to better organize the project as the functionality increases.
 2. Requests from Cortex part can be served and a value decribing the execution result is returned.
-3. Dispatching and daemon threads are optimized to reduce ram consumption. 
+3. Dispatching and daemon threads are optimized to reduce RAM consumption. (Memory leakage ever occurred because our program was not slim enough before the thread optimization.)
 
 This code can be compiled and downloaded to Ferrari Board using the online compiler from Mbed website.
