@@ -1,11 +1,11 @@
 Expedition_MBED_Port
 ====================
-FreeRTOS porting to Expedition Cortex-M3 chip
 
-This is the source code of FreeRTOS porting to Expedition 45nm Cortex-M3 chip. The FreeRTOS kernel code is in Source directory and demo application is in Demo/cortex_m3_gcc directory.
+Source code for the MBED part on Ferrari board
 
-To build demo application: $ cd Demo/cortex_m3_gcc/build $ make all
+This is the source code for MBED on Ferrari board. 
+1. This code is modified to a large degree to better organize the project as the functionality increases.
+2. Requests from Cortex part can be served and a value decribing the execution result is returned.
+3. Dispatching and daemon threads are optimized to reduce ram consumption. 
 
-A text file named "system.hex" will be generated. It can then be copied to MBED USB drive be loaded to Expedition chip by MBED.
-
-To remove demo application built before: $ cd Demo/cortex_m3_gcc/build $ make clean
+This code can be compiled and downloaded to Ferrari Board using the online compiler from Mbed website.
