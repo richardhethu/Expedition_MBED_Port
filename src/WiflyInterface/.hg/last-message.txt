@@ -1,0 +1,1 @@
+One func is modified to make WiflyInterface compatible with rtos. Basically a different method to read byte.
